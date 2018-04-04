@@ -19,13 +19,13 @@ const AppHeader = () => (
             <Link to="/page-2/">My CV</Link>
           </NavbarItem>
           <NavbarItem href="https://github.com/Sykomaniac" target="_blank" isHidden='touch'>
-              <Icon className='fa fa-github' />
+            <Icon className='fa fa-github' />
           </NavbarItem>
           <NavbarItem href="https://plus.google.com/+AshleySykes" target="_blank" isHidden='touch'>
-              <Icon className='fa fa-google-plus' style={{ color: '#d34836' }} />
+            <Icon className='fa fa-google-plus' style={{ color: '#d34836' }} />
           </NavbarItem>
           <NavbarItem href="https://twitter.com/ashsykes15" target="_blank" isHidden='touch'>
-              <Icon className='fa fa-twitter' style={{ color: '#55acee' }} />
+            <Icon className='fa fa-twitter' style={{ color: '#55acee' }} />
           </NavbarItem>
         </NavbarEnd>
       </NavbarMenu>
