@@ -1,6 +1,7 @@
 module.exports = {
+  pathPrefix: `/sykomaniac.github.io`,
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Sykomaniac :: Hello World!',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
