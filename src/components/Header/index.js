@@ -33,7 +33,7 @@ export default class AppHeader extends React.Component {
           <NavbarMenu  isActive={this.state.isActive} onClick={this.onClickNav}>
             <NavbarStart>
               <NavbarItem>
-                <Link to="/page-2/">My CV</Link>
+                <Link to="/cv/">My CV</Link>
               </NavbarItem>
             </NavbarStart>
             <NavbarEnd>

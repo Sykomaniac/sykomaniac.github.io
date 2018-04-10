@@ -22,7 +22,7 @@ import AppFooter from '../components/Footer'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title="Sykomaniac :: Hello, World!" />
-    <Hero isHalfHeight isBold isColor="primary">
+    <Hero isFullHeight isBold isColor="primary">
       <HeroHeader>
         <AppHeader />
       </HeroHeader>
