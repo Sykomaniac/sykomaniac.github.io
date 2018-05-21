@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/sykomaniac.github.io`,
+  pathPrefix: `/`,
   siteMetadata: {
     title: 'Sykomaniac :: Hello, World!',
   },
