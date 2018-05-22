@@ -7,9 +7,9 @@
     "bloomer": "^0.6.3",
     "bulma": "^0.6.2",
     "font-awesome": "^4.7.0",
-    "gatsby": "^1.9.241",
-    "gatsby-link": "^1.6.39",
-    "gatsby-plugin-react-helmet": "^2.0.8",
+    "gatsby": "^1.9.261",
+    "gatsby-link": "^1.6.44",
+    "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-sass": "1.0.19",
     "react-helmet": "^5.2.0",
     "typeface-open-sans": "0.0.54"
@@ -27,6 +27,6 @@
   },
   "devDependencies": {
     "gh-pages": "^1.1.0",
-    "prettier": "^1.11.1"
+    "prettier": "^1.12.1"
   }
 }
