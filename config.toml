@@ -10,7 +10,7 @@ disable404 = true
   author = "Ashley Sykes"
   description = "A proud dad, passionate Software Engineer, Android enthusiast and football fanatic."
   avatar = "me-small.png"
-  styles = "styles.css" #C V style
+  styles = "styles-6.css" #C V style
 
   [[params.social]]
     name = "github"
@@ -22,7 +22,7 @@ disable404 = true
 
   # Green theme
   [params.style]
-    darkestColor = "#315659"
+    darkestColor = "#4B6A78"
     darkColor = "#253031"
     primaryColor = "#dad865"
     lightColor = "#96a879"
