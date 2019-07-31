@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>A guide to GraphQL in Java // Sykomaniac :: Home</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Ashley Sykes" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://example.com/css/main.min.6ea778480b9dff62ee116ca62f5e6dc43ef7acfca509cd73f8610941f361b539.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A guide to GraphQL in Java"/>
+<meta name="twitter:description" content="GraphQL, MongoDB and Java: An introduction  TLDR; Follow the guide below if you are interested in an up to date walkthrough on how to integrate GraphQL, MongoDB and Java - if not head over to my GitHub to view the code.
+ I decided to create this article as although a lot of guides exist today they were either incomplete, irrelevant or out-dated. After struggling to decipher existing tutorials I thought I would contribute my findings back in hope someone would find them useful&hellip;"/>
+
+    <meta property="og:title" content="A guide to GraphQL in Java" />
+<meta property="og:description" content="GraphQL, MongoDB and Java: An introduction  TLDR; Follow the guide below if you are interested in an up to date walkthrough on how to integrate GraphQL, MongoDB and Java - if not head over to my GitHub to view the code.
+ I decided to create this article as although a lot of guides exist today they were either incomplete, irrelevant or out-dated. After struggling to decipher existing tutorials I thought I would contribute my findings back in hope someone would find them useful&hellip;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/posts/20190531_graphql/" />
+<meta property="article:published_time" content="2019-05-31T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-05-31T00:00:00&#43;00:00"/>
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://example.com"><img class="app-header-avatar" src="/me-small.png" alt="Ashley Sykes" /></a>
+      <h1>Sykomaniac :: Home</h1>
+      <p>A proud dad, passionate Software Engineer, Android enthusiast and football fanatic.</p>
+      <div class="app-header-social">
+          <a href="/me"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-book-open">
+  <title>book-open</title>
+  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://github.com/Sykomaniac"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/ashsykes15"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">A guide to GraphQL in Java</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          May 31, 2019
+          
+            <span class="post-author">::
+              Ashley Sykes
+            </span>
+          
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          8 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="https://example.com/tags/dev/">dev</a><a class="tag" href="https://example.com/tags/java/">java</a><a class="tag" href="https://example.com/tags/spring-boot/">spring-boot</a><a class="tag" href="https://example.com/tags/graphql/">graphql</a></div></div>
+    </header>
+
+    
+    <div class="post-cover">
+      <img src="https://example.com/assets/images/GraphQL_Logo.png" />
+    </div>
+    
+
+    <div class="post-content">
+      
+
+<h1 id="graphql-mongodb-and-java-an-introduction">GraphQL, MongoDB and Java: An introduction</h1>
+
+<blockquote>
+<p>TLDR; Follow the guide below if you are interested in an up to date walkthrough on how to integrate GraphQL, MongoDB and Java - if not head over to my <a href="https://github.com/sykomaniac">GitHub</a> to view the code.</p>
+</blockquote>
+
+<p>I decided to create this article as although a lot of guides exist today they were either incomplete, irrelevant or out-dated. After struggling to decipher existing tutorials I thought I would contribute my findings back in hope someone would find them useful&hellip;</p>
+
+<h2 id="background">Background</h2>
+
+<p>I wanted to build a GraphQL API for a showcase project I am currently working through. Alongside GraphQL the API will run under Spring Boot (to simplify the process of creating and running a Spring application) this will then connect to a simple MongoDB instance.</p>
+
+<p>Now we know the why let&rsquo;s explore the how!</p>
+
+<h2 id="mongodb">MongoDB</h2>
+
+<p>As previously stated I want the application to connect to a MongoDB instance. For this tutorial I will be running MongoDB via docker-compose. If you don&rsquo;t have docker and docker-compose installed then head over <a href="https://docs.docker.com/compose/gettingstarted/">here</a> for help on getting started. Alternatively, if you want to run on your own MongoDB instance then that&rsquo;s fine :) (although the rest of this section will go into detail on setting up a Docker MongoDB instance).</p>
+
+<p>Our compose file looks like the following:</p>
+
+<pre><code class="language-bash">  version: '3'
+  
+  services:
+    mongo:
+    image: mongo
+      env_file:
+      - mongo.env
+      ports:
+      - 27017:27017
+      volumes:
+      - ./data/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+</code></pre>
+
+<p>Nothing special here although for those following closely there are 2 things to note:</p>
+
+<h3 id="dot-env">Dot Env</h3>
+
+<p>I make use of <a href="https://medium.com/@thejasonfile/using-dotenv-package-to-create-environment-variables-33da4ac4ea8f">dot env</a> to remove the need to store security information in our configuration files as defined as best practice in <a href="https://12factor.net/config">12 Factor Apps</a>. For the purpose of this tutorial the values stored in the dot env file are provided below.</p>
+
+<pre><code class="language-bash">  MONGO_INITDB_ROOT_USERNAME=root
+  MONGO_INITDB_ROOT_PASSWORD=example
+  MONGO_INITDB_DATABASE=admin
+  MONGO_HOST=mongo
+</code></pre>
+
+<p>The file configures the initial username and password to authenticate against the DB, the name of the initial database where the user will be inserted and the hostname to connect to the MongoDB server (if I are running our GraphQL app via Docker).</p>
+
+<h3 id="volume">Volume</h3>
+
+<p>Finally, I have added a volume which copies an initiailsation script into the <code>docker-entrypoint-initdb.d</code> directory. This script is used to bootstrap the application, a snippet of it is below:</p>
+
+<pre><code class="language-javascript">// Auth against admin DB
+db.auth('root', 'example')
+
+// Change to desired DB
+db = db.getSiblingDB('graphql-app')
+
+// Clear previous dummy data
+db.users.drop();
+db.articles.drop();
+
+// Insert dummy data
+db.articles.insertMany([...
+</code></pre>
+
+<p>Essentially, it:</p>
+
+<ul>
+<li>Authenticates against the database</li>
+<li>Selects the database I want to create for our test application</li>
+<li>Clears any existing data</li>
+<li>Creates and inserts dummy data into 2 collections - <code>Users</code> and <code>Articles</code>
+<br /></li>
+</ul>
+
+<h2 id="application">Application</h2>
+
+<p>Now that I have our database up and running its time to look into the actual application. As a reminder this will be a Spring Boot application that creates a GraphQL server that will query the previously created MongoDB database.</p>
+
+<h3 id="pom-xml">Pom.xml</h3>
+
+<p>Our application utilises Maven for its dependency management. A key aspect of this guide is to highlight the required dependencies:</p>
+
+<pre><code class="language-xml">&lt;!-- GraphQL --&gt;
+&lt;dependency&gt;
+  &lt;groupId&gt;com.graphql-java&lt;/groupId&gt;
+  &lt;artifactId&gt;graphql-java&lt;/artifactId&gt;
+  &lt;version&gt;11.0&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+  &lt;groupId&gt;com.graphql-java-kickstart&lt;/groupId&gt;
+  &lt;artifactId&gt;graphql-java-tools&lt;/artifactId&gt;
+  &lt;version&gt;5.5.2&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<p>The above dependencies are required to add GraphQL support to our project. One of the main aspects to notice here is that the <code>graphql-java-tools</code> dependency is now published under <code>com.graphql-java-kickstart</code>. This was a change that occurred in <a href="https://github.com/graphql-java-kickstart/graphql-java-tools/releases/tag/5.3.1">Spetember 2018</a> but is not reflected in many guides.</p>
+
+<pre><code class="language-xml">&lt;!-- Spring Tools --&gt;
+&lt;dependency&gt;
+  &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+  &lt;artifactId&gt;spring-boot-starter-data-mongodb&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+  &lt;groupId&gt;com.graphql-java-kickstart&lt;/groupId&gt;
+  &lt;artifactId&gt;graphql-spring-boot-starter&lt;/artifactId&gt;
+  &lt;version&gt;${graphQL.helper.version}&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+  &lt;groupId&gt;com.graphql-java-kickstart&lt;/groupId&gt;
+  &lt;artifactId&gt;graphiql-spring-boot-starter&lt;/artifactId&gt;
+  &lt;version&gt;${graphQL.helper.version}&lt;/version&gt;
+  &lt;scope&gt;runtime&lt;/scope&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<p>Here I add the Spring Boot and MongoDB starters respectively which configures our application as a Spring Boot app. It also adds the required libraries for working with MongoDB. The final two dependencies wire up our application to serve our GraphQL app and <a href="https://github.com/graphql/graphiql">GraphiQL</a> (an in browser IDE for querying GraphQL). Again these dependecies were transferred to a new repository in September 2018.</p>
+
+<pre><code class="language-xml">&lt;!-- Data tools --&gt;
+&lt;dependency&gt;
+  &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;
+  &lt;artifactId&gt;lombok&lt;/artifactId&gt;
+  &lt;version&gt;1.18.2&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<p>Finally, I add the awesome <a href="https://projectlombok.org/">Lombok</a> to reduce the amount of boilerplate code I need to write.</p>
+
+<p>Phew, that&rsquo;s all of the required dependencies added and explained!</p>
+
+<h3 id="spring-boot">Spring Boot</h3>
+
+<p>In this project I make use of Spring Boot 2. I configure the application via an <code>application.yml</code> file located in the projects resource directory (you can also use an <code>application.properties</code> file if you so wish). Our <code>application.yml</code> file looks like this:</p>
+
+<pre><code class="language-yaml">spring:
+	data:
+  	mongodb:
+    	database: graphql-app
+      port: 27017
+      host: localhost
+      username: ${MONGO_USERNAME:root}
+      password: ${MONGO_PASSWORD:example}
+      authentication-database: ${MONGO_AUTH:admin} # Our user was added in the Admin DB
+  server:
+    port: 9000
+graphql:
+  servlet:
+  	enabled: true
+graphiql:
+	enabled: true
+</code></pre>
+
+<p>Again nothing too special here. The main thing to note is that I configure access to our MongoDB instance via environment variables or with a default value if such an environment variable is not provided.</p>
+
+<h3 id="graphqls">Graphqls</h3>
+
+<p>Rather than defining our schema in code I want to make use of SDL (Schema Definition Language) to define our GraphQL API - <code>graphql-java-tools</code> allows us to do just that. I can define <code>.graphqls</code> files that use SDL to describe our desired API. These files are then stored in the projects resources directory. A snippet of these definition files is provided below:</p>
+
+<pre><code class="language-json">type Query {
+  users: [User]
+  user(id: ID!): User
+}
+
+type User {
+  id: ID!
+  name: String!
+  age: Int!
+  nationality: String
+  createdAt: String!
+  articles: [Article]
+}
+</code></pre>
+
+<p>Here I define a <code>Query</code> type that details the search endpoints I want to be available in our GraphQL API. I also define a <code>User</code> type that maps to our <code>users</code> MongoDB collection. An important note here is that a <code>User</code> can be the author of zero or more <code>articles</code> (which is detailed later on).</p>
+
+<h3 id="entities">Entities</h3>
+
+<p>I create POJO&rsquo;s (Plain Old Java Objects) to represent our MongoDB collections. An example POJO for the <code>User</code> entity is provided below:</p>
+
+<pre><code class="language-java">@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Document(collection = &quot;users&quot;)
+public class User {
+  private String id;
+  private String name;
+  private Integer age;
+  private Date createdAt;
+  private String nationality;
+  private List&lt;ObjectId&gt; articles;
+}
+</code></pre>
+
+<p><strong>See <a href="https://projectlombok.org/">lombok</a> for more information on the annotations.</strong></p>
+
+<p>The <code>@Document</code> annotation is provided by the Spring Boot MongoDB dependency, it is used to associate the POJO with the appropriate MongoDB collection.</p>
+
+<p>Finally, the eagle-eyed reader might have noticed that I define the <code>id</code> property as a <code>String</code> type although I make use of <code>ObjectID's</code> in the database. The reason for this is that I will run into a mapping exception if I return the id property as part of a query (as it is returned as a <code>String</code> from the database).</p>
+
+<h3 id="repositories">Repositories</h3>
+
+<p>A repository is used to provide access to the underlying MongoDB collection for querying. In our example these are very simple - I extend the default <code>MongoRepository</code> for our collection which provides access to methods such as <code>findById</code> etc.</p>
+
+<pre><code class="language-java">@Repository
+public interface UserRepository extends MongoRepository&lt;User, ObjectId&gt; {}
+</code></pre>
+
+<p>In the above snippet the first property in the type definition is the POJO class corresponding to this repository, the second property is the data type of the key for that collection.</p>
+
+<h3 id="queries">Queries</h3>
+
+<p>In our schema definition I defined the following query:</p>
+
+<pre><code class="language-json">user(id: ID!): User
+</code></pre>
+
+<p>The above defines an endpoint (<code>/user</code>) that requires a non-nullable parameter of type ID. On completion either a <code>null</code> value (as indicated by the lack of <code>!</code>) or a response of type <code>User</code> is returned. The corresponding implementation for this endpoint looks like:</p>
+
+<pre><code class="language-java">@RequiredArgsConstructor
+@Component
+public class UserQueries implements GraphQLQueryResolver {
+  private final UserRepository userRepository;
+
+  public Optional&lt;com.aa.graphql.entities.User&gt; getUser(ObjectId id) {
+    return userRepository.findById(id);
+  }
+}
+</code></pre>
+
+<p>This implements the query method as it:</p>
+
+<ul>
+<li>Returns an Optional (nullable) <code>User</code> type</li>
+<li>Takes in a an ID parameter of type <code>ObjectID</code></li>
+<li>Uses the MongoDB method <code>findById</code> to find the appropriate <code>User</code> in the database
+<br /></li>
+</ul>
+
+<p>I also implement the <code>GraphQLQueryResolver</code> interface to signify that I have implemented the Query method defined in our schema definition.</p>
+
+<h3 id="resolvers">Resolvers</h3>
+
+<p>The final part of our tutorial covers the scenario where there is a requirement to provide more complex data structures as part of the query response (i.e. lookup a value from another collection). For this I need to implement a <code>GraphQLResolver</code>. The resolver is typically the name of the POJO class with <code>Resolver</code> on the end (In our example below the file is named <code>UserResolver</code>). Hopefully you remember that the <code>User</code> type has a complex property that returns an Array of articles associated to that user:</p>
+
+<pre><code class="language-json">articles: [Article]
+</code></pre>
+
+<p>This can&rsquo;t be queried from the single collection so I need to implement a resolver to retrieve the relevant data.</p>
+
+<pre><code class="language-java">@RequiredArgsConstructor
+@Component
+public class UserResolver implements GraphQLResolver&lt;User&gt; {
+  private final ArticleRepository articleRepository;
+
+  public Iterable&lt;Article&gt; getArticles(User user)
+  {
+    return articleRepository.findAllById(user.getArticles());
+  }
+}
+</code></pre>
+
+<p>The resolver is only invoked when a query retrieves <code>Articles</code> for a <code>User</code>. When a <code>User</code> record is found, that object is passed into the resolver (as denoted by <code>GraphQLResolver&lt;User&gt;</code>). As I now have the data for the desired user available to us I can get the value(s) stored in the <code>articles</code> property (a list of article ObjectId&rsquo;s) and use them to retrieve the desired <code>Article</code>&rsquo;s information.</p>
+
+<h2 id="code">Code</h2>
+
+<p>A complete sample project can be found on my<a href="https://github.com/sykomaniac">GitHub</a> repository. The project contains instructions on how to run the project locally for those of you that would like to play around with the code.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>As I stated at the beginning of this article I aimed to provide a detailed and up-to-date walkthrough outlining how to integrate Java, GraphQL and MongoDB. Hopefully you have found this guide interesting and informative - or at least you enjoyed playing around with the source code!</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
