@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Sykomaniac :: Home</title>
-    <link>https://example.com/tags/</link>
+    <link>https://sykomaniac.github.io/tags/</link>
     <description>Recent content in Tags on Sykomaniac :: Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 31 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sykomaniac.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>dev</title>
-      <link>https://example.com/tags/dev/</link>
+      <link>https://sykomaniac.github.io/tags/dev/</link>
       <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/dev/</guid>
+      <guid>https://sykomaniac.github.io/tags/dev/</guid>
       <description></description>
     </item>
     
     <item>
       <title>graphql</title>
-      <link>https://example.com/tags/graphql/</link>
+      <link>https://sykomaniac.github.io/tags/graphql/</link>
       <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/graphql/</guid>
+      <guid>https://sykomaniac.github.io/tags/graphql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>java</title>
-      <link>https://example.com/tags/java/</link>
+      <link>https://sykomaniac.github.io/tags/java/</link>
       <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/java/</guid>
+      <guid>https://sykomaniac.github.io/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>spring-boot</title>
-      <link>https://example.com/tags/spring-boot/</link>
+      <link>https://sykomaniac.github.io/tags/spring-boot/</link>
       <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/spring-boot/</guid>
+      <guid>https://sykomaniac.github.io/tags/spring-boot/</guid>
       <description></description>
     </item>
     

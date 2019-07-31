@@ -3,58 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://example.com/posts/20190531_graphql/</loc>
+    <loc>https://sykomaniac.github.io/posts/20190531_graphql/</loc>
     <lastmod>2019-05-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://sykomaniac.github.io/</loc>
     <lastmod>2019-05-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/posts/</loc>
-    <lastmod>2019-05-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://sykomaniac.github.io/posts/</loc>
     <lastmod>2019-05-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/dev/</loc>
+    <loc>https://sykomaniac.github.io/tags/</loc>
     <lastmod>2019-05-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/graphql/</loc>
+    <loc>https://sykomaniac.github.io/tags/dev/</loc>
     <lastmod>2019-05-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/java/</loc>
+    <loc>https://sykomaniac.github.io/tags/graphql/</loc>
     <lastmod>2019-05-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/spring-boot/</loc>
+    <loc>https://sykomaniac.github.io/tags/java/</loc>
     <lastmod>2019-05-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://example.com/me/</loc>
+    <loc>https://sykomaniac.github.io/tags/spring-boot/</loc>
+    <lastmod>2019-05-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://example.com/categories/</loc>
+    <loc>https://sykomaniac.github.io/me/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sykomaniac.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   

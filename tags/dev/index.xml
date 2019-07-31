@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dev on Sykomaniac :: Home</title>
-    <link>https://example.com/tags/dev/</link>
+    <link>https://sykomaniac.github.io/tags/dev/</link>
     <description>Recent content in dev on Sykomaniac :: Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 31 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sykomaniac.github.io/tags/dev/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>A guide to GraphQL in Java</title>
-      <link>https://example.com/posts/20190531_graphql/</link>
+      <link>https://sykomaniac.github.io/posts/20190531_graphql/</link>
       <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/posts/20190531_graphql/</guid>
+      <guid>https://sykomaniac.github.io/posts/20190531_graphql/</guid>
       <description>GraphQL, MongoDB and Java: An introduction  TLDR; Follow the guide below if you are interested in an up to date walkthrough on how to integrate GraphQL, MongoDB and Java - if not head over to my GitHub to view the code.
  I decided to create this article as although a lot of guides exist today they were either incomplete, irrelevant or out-dated. After struggling to decipher existing tutorials I thought I would contribute my findings back in hope someone would find them useful&amp;hellip;</description>
     </item>
