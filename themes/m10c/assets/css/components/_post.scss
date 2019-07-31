@@ -2,6 +2,10 @@
   color: $lightest-color;
 }
 
+.post-cover {
+  text-align: center;
+}
+
 .post-content {
   pre {
     border-left: 0.4em solid rgba($primary-color, .8);

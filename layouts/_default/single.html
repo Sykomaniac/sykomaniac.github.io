@@ -6,6 +6,11 @@
         <div>
           {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
           {{ .PublishDate.Format "Jan 2, 2006" }}
+          {{ with .Params.author }}
+            <span class="post-author">::
+              {{ . }}
+            </span>
+          {{ end }}
         </div>
         <div>
           {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
@@ -23,6 +28,13 @@
         {{- end -}}
       </div>
     </header>
+
+    {{ with .Params.cover }}
+    <div class="post-cover">
+      <img src="{{ . | absURL }}" />
+    </div>
+    {{ end }}
+
     <div class="post-content">
       {{ .Content }}
     </div>
