@@ -30,7 +30,7 @@ disable404 = true
 
   # Profile section
   [params.profile]
-      name = "John Doe"
+      name = "Ashley Sykes"
       tagline = "Full Stack Developer"
       avatar = "me-small.png"
 
@@ -41,42 +41,42 @@ disable404 = true
       [[params.contact.list]]
       class = "email"
       icon = "fa-envelope"
-      url = "mailto: yourname@email.com"
-      title = "john.doe@website.com"
+      url = "mailto: ashley.sykes@gmail.com"
+      title = "ashley.sykes@gmail.com"
 
       [[params.contact.list]]
       class = "phone"
       icon = "fa-phone"
-      url = "tel:+1234567890"
-      title = "+1234567890"
+      url = "tel:+447975732684"
+      title = "+44797 573 2684"
 
       [[params.contact.list]]
       class = "website"
       icon = "fa-globe"
-      url = "//portfoliosite.com"
-      title = "portfoliosite.com"
+      url = "//sykomaniac.github.com"
+      title = "sykomaniac.github.com"
 
       [[params.contact.list]]
       class = "linkedin"
       icon = "fa-linkedin"
-      url = "//linkedin.com/in/johndoe"
-      title = "linkedin.com/in/johndoe"
+      url = "//linkedin.com/in/ashsykes"
+      title = "linkedin/ashsykes"
 
       [[params.contact.list]]
       class = "github"
       icon = "fa-github"
-      url = "//github.com/username"
-      title = "github.com/username"
+      url = "//github.com/sykomaniac"
+      title = "github.com/sykomaniac"
 
       [[params.contact.list]]
       class = "twitter"
       icon = "fa-twitter"
-      url = "//twitter.com/username"
-      title = "@twittername"
+      url = "//twitter.com/ashsykes15"
+      title = "@ashsykes15"
 
   # Education section
   [params.education]
-      enable = true
+      enable = false
       title = "Education"
 
       [[params.education.list]]
@@ -91,7 +91,7 @@ disable404 = true
 
   # Languages section
   [params.language]
-      enable = true
+      enable = false
       title = "Languages"
 
       [[params.language.list]]
@@ -108,7 +108,7 @@ disable404 = true
 
   # Interests section
   [params.interests]
-      enable = true
+      enable = false
       title = "Interests"
 
       [[params.interests.list]]
@@ -122,14 +122,14 @@ disable404 = true
 
   # Summary section
   [params.summary]
-      enable = true
+      enable = false
       icon = "fa-user"
       title = "Career Profile"
       summary = "**Summarise your career here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
 
   # Experiences section
   [params.experiences]
-      enable = true
+      enable = false
       icon = "fa-briefcase"
       title = "Experiences"
 
@@ -153,7 +153,7 @@ disable404 = true
 
   # Projects section
   [params.projects]
-      enable = true
+      enable = false
       icon = "fa-archive"
       title = "Projects"
       intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
@@ -185,7 +185,7 @@ disable404 = true
 
   # Skills section
   [params.skills]
-      enable = true
+      enable = false
       icon = "fa-rocket"
       title = "Skills & Proficiency"
 
