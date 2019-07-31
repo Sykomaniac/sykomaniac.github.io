@@ -8,7 +8,7 @@ disable404 = true
 
 [params]
   author = "Ashley Sykes"
-  description = "A proud dad, passionate Software Engineer, Android enthusiast and football fanatic."
+  description = "A proud dad, passionate Software Engineer and football fanatic."
   avatar = "me-small.png"
   styles = "styles-6.css" #C V style
 

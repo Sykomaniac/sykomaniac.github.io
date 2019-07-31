@@ -2,8 +2,6 @@
 title= "Blog Posts"
 +++
 
-Illo earum ab natus velit voluptatem rem distinctio amet. Sint ipsam incidunt et delectus. Rerum possimus magnam laudantium dolor. Rerum et reprehenderit recusandae animi ipsa quasi sit vero. Corrupti asperiores eum aperiam et sapiente. Ullam repellendus atque commodi.
- 
-Quia aut et quas animi. Iure voluptate omnis libero illum hic quia. Itaque temporibus commodi eligendi id ut eos.
- 
-Tenetur dolor explicabo qui. Voluptatem quia eaque est vitae. Quidem aliquam exercitationem voluptatum. Aut vitae rerum eum molestiae rem. Et tempora explicabo mollitia iste.
+My name is Ashley Sykes and I am a full stack software developer (for 10 years and counting), speaker, software tinkerer and proud dad.
+
+This is my simple site to a) blog about things I'm interested in/helpful guides/random thoughts and b) to advertise myself =D

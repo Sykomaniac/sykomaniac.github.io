@@ -27,6 +27,9 @@
       </div>
     </header>
     <main class="app-container">
+      <div class="app-container-header">
+          <a href="/me">{{ partial "icon.html" (dict "ctx" $ "name" "book-open" ) }} Want to hire me :: My CV</a>
+      </div>
       {{ block "main" . }}
         {{ .Content }}
       {{ end }}
