@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://sykomaniac.github.io"
 title = "Sykomaniac :: Home"
 theme = ["hugo-orbit-theme", "m10c"]
 paginate = 5
