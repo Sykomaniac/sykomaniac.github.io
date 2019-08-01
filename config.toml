@@ -76,56 +76,52 @@ disable404 = true
 
   # Education section
   [params.education]
-      enable = false
+      enable = true
       title = "Education"
 
       [[params.education.list]]
-      degree = "MSc in Computer Science"
-      college = "University of London"
-      dates = "2006 - 2010"
+      college = "University of Leeds"
+      degree = "1st Class with Honors BSc in Computer Science"
+      dates = "2006 - 2009"
 
       [[params.education.list]]
-      degree = "BSc in Applied Mathematics"
-      college = "Bristol University"
-      dates = "2007 - 2011"
+      college = "West Leeds Sixth Form College"
+      degree = "3 B's at A-Level in English Language, English Literature and Sports Science"
+      dates = "2004 - 2006"
+
+      [[params.education.list]]
+      college = "West Leeds High School"
+      degree = "10 A - B GCSE's English, Maths, Science etc"
+      dates = "1999 - 2004"
 
   # Languages section
   [params.language]
       enable = false
       title = "Languages"
 
-      [[params.language.list]]
-      language = "English"
-      level = "Native"
-
-      [[params.language.list]]
-      language = "French"
-      level = "Professional"
-
-      [[params.language.list]]
-      language = "Russian"
-      level = "Professional"
-
   # Interests section
   [params.interests]
-      enable = false
+      enable = true
       title = "Interests"
 
       [[params.interests.list]]
-      interest = "Climbing"
+      interest = "Being a dad"
 
       [[params.interests.list]]
-      interest = "Snowboarding"
+      interest = "Playing with software projects"
 
       [[params.interests.list]]
-      interest = "Cooking"
+      interest = "Football"
+
+      [[params.interests.list]]
+      interest = "Ballroom dancing"
 
   # Summary section
   [params.summary]
-      enable = false
+      enable = true
       icon = "fa-user"
-      title = "Career Profile"
-      summary = "**Summarise your career here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
+      title = "Personal Summary"
+      summary = "A proud dad, passionate Software Engineer and football enthusiast."
 
   # Experiences section
   [params.experiences]
@@ -153,35 +149,25 @@ disable404 = true
 
   # Projects section
   [params.projects]
-      enable = false
+      enable = true
       icon = "fa-archive"
       title = "Projects"
-      intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
+      intro = ""
 
       [[params.projects.list]]
-      title = "Hugrid"
-      url = "https://github.com/aerohub/hugrid"
-      tagline = "Grid theme for Hugo. It's a kind of boilerplate to perform anyone or anything quickly. Portfolio, collection, bookmarks, contacts and so on"
+      title = "Flutter"
+      url = "https://sykomaniac.github.io/posts/20190531_flutter/"
+      tagline = "A React Native developers view of FLutter."
 
       [[params.projects.list]]
-      title = "Simple FAQ Theme for Hugo"
-      url = "https://github.com/aerohub/hugo-faq-theme"
-      tagline = "Simple FAQ Theme for Hugo. You may use this theme for building very simple FAQs or note lists."
-
-      [[params.projects.list]]
-      title = "Hugo Identity"
-      url = "https://github.com/aerohub/hugo-identity-theme"
-      tagline = "Little profile/card-style template for Hugo."
-
-      [[params.projects.list]]
-      title = "Orbit"
-      url = "https://github.com/aerohub/hugo-orbit-theme"
-      tagline = "Hugo Resume/CV Theme for Developers."
+      title = "Java GraphQL"
+      url = "https://sykomaniac.github.io/posts/20190531_graphql/"
+      tagline = "An up to date walkthrough of using Spring Boot to work with GraphQL and MongoDB."
 
       [[params.projects.list]]
       title = "Me"
       url = "https://github.com/aerohub/hugo-me-theme"
-      tagline = "A simple responsive Hugo theme for personal site."
+      tagline = "A simple responsive Hugo setup for my personal site."
 
   # Skills section
   [params.skills]
