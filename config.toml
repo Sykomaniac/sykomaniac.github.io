@@ -53,8 +53,8 @@ disable404 = true
       [[params.contact.list]]
       class = "website"
       icon = "fa-globe"
-      url = "//sykomaniac.github.com"
-      title = "sykomaniac.github.com"
+      url = "//sykomaniac.github.io"
+      title = "sykomaniac.github.io"
 
       [[params.contact.list]]
       class = "linkedin"
@@ -121,7 +121,7 @@ disable404 = true
       enable = true
       icon = "fa-user"
       title = "Personal Summary"
-      summary = "A proud dad, passionate Software Engineer and football enthusiast."
+      summary = "I am an incredibly hard working individual with a vast amount of technical experience and a real passion for software development. I thoroughly enjoy working on and resolving difficult problems in the most elegant way possible. Beyond software development I am a proud dad and a football enthusiast."
 
   # Experiences section
   [params.experiences]
@@ -130,21 +130,27 @@ disable404 = true
       title = "Experiences"
 
       [[params.jobs.list]]
-      position = "Lead Developer"
-      dates = "2015 - Present"
-      company = "Startup Hubs, San Francisco"
+      position = "Technical Expert"
+      dates = "2019 - Present"
+      company = "Asda Stores Limited, Leeds, UK"
       details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.\n\n Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
 
       [[params.jobs.list]]
       position = "Senior Software Engineer"
-      dates = "2014 - 2015"
-      company = "Google, London"
+      dates = "2018 - 2019"
+      company = "Edgetic Ltd, Leeds, UK"
+      details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.\n\n Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+
+      [[params.jobs.list]]
+      position = "Senior Software Engineer"
+      dates = "2015 - 2017"
+      company = "Asda Stores Limited, Leeds, UK"
       details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
 
       [[params.jobs.list]]
-      position = "UI Developer"
-      dates = "2012 - 2014"
-      company = "Amazon, London"
+      position = "Senior Software Engineer"
+      dates = "2009 - 2015"
+      company = "X-Lab Ltd, Leeds, UK"
       details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
 
   # Projects section
@@ -156,7 +162,7 @@ disable404 = true
 
       [[params.projects.list]]
       title = "Flutter"
-      url = "https://sykomaniac.github.io/posts/20190531_flutter/"
+      url = "https://sykomaniac.github.io/posts/WIP_flutter/"
       tagline = "A React Native developers view of FLutter."
 
       [[params.projects.list]]
@@ -171,7 +177,7 @@ disable404 = true
 
   # Skills section
   [params.skills]
-      enable = false
+      enable = true
       icon = "fa-rocket"
       title = "Skills & Proficiency"
 
@@ -180,24 +186,40 @@ disable404 = true
       level = "98%"
               
       [[params.skills.list]]
-      skill = "Javascript & jQuery"
+      skill = "Backend languages (Node.js, .NET, Java, Python & Golang)"
       level = "98%"
 
       [[params.skills.list]]
-      skill = "Angular"
+      skill = "Frontend languages (React, Knockout.js, Backbone.js, Ember.js)"
+      level = "98%"
+
+      [[params.skills.list]]
+      skill = "Mobile Development languages (React Native, Flutter)"
       level = "95%"
 
       [[params.skills.list]]
-      skill = "HTML5 & CSS"
+      skill = "Web technologies (CSS, HTML, Sass etc)"
+      level = "98%"
+
+      [[params.skills.list]]
+      skill = "RDBMS (MSSQL, MariaDB etc)"
+      level = "98%"
+
+      [[params.skills.list]]
+      skill = "NoSQL (MongoDB, Cassandra, InfluxDB etc)"
       level = "95%"
 
       [[params.skills.list]]
-      skill = "Ruby on Rails"
-      level = "75%"
+      skill = "Containerisation tooling (Docker, Docker Compose, Kubernetes, Helm, Draft)"
+      level = "90%"
 
       [[params.skills.list]]
-      skill = "Sketch & Photoshop"
-      level = "60%"
+      skill = "SCM, CI & CD tooling (Git, Jenkins etc)"
+      level = "98%"
+
+      [[params.skills.list]]
+      skill = "SDLC (Scrum, Kanban, Lean, Prince 2)"
+      level = "98%"
 
   # Footer section
   [params.footer]
