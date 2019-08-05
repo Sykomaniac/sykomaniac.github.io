@@ -1,0 +1,8 @@
+<div class="contact-container container-block">
+    <ul class="list-unstyled contact-list">
+        <li class="download"><i class="fa fa-download"></i><a href="{{ .Site.BaseURL }}assets/resume.pdf" target="_blank">Download a copy</a></li>
+    {{ range .Site.Params.contact.list }}
+        <li class="{{ .class }}"><i class="fa {{ .icon }}"></i><a href="{{ .url }}">{{ .title }}</a></li>
+    {{ end }}
+    </ul>
+</div><!--//contact-container-->
