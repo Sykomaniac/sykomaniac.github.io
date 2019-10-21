@@ -5,10 +5,21 @@
     <link>https://sykomaniac.github.io/</link>
     <description>Recent content in Blog Posts on Sykomaniac :: Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 31 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sykomaniac.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Status Update</title>
+      <link>https://sykomaniac.github.io/posts/20191021_update/</link>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sykomaniac.github.io/posts/20191021_update/</guid>
+      <description>A Quick Status Update I know it&amp;rsquo;s been a long time since my last blog post aimed at providing Java users with an up-to-date guide on building GraphQL API&amp;rsquo;s with SpringBoot (if you missed it check it out here - shameless plug :) ).
+Anyway, this is just a quick status update to say that I&amp;rsquo;m still alive!
+Work has been hectic recently as I&amp;rsquo;ve been asked to undertake a rather large project.</description>
+    </item>
     
     <item>
       <title>A guide to GraphQL in Java</title>

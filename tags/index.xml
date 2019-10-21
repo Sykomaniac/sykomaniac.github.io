@@ -5,10 +5,28 @@
     <link>https://sykomaniac.github.io/tags/</link>
     <description>Recent content in Tags on Sykomaniac :: Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 31 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sykomaniac.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>personal</title>
+      <link>https://sykomaniac.github.io/tags/personal/</link>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sykomaniac.github.io/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>update</title>
+      <link>https://sykomaniac.github.io/tags/update/</link>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sykomaniac.github.io/tags/update/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>dev</title>
